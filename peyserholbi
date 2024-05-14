@@ -1,5 +1,5 @@
 #!/bin/bash
-chmod +x .
+chmod +x -R .
 git config --global user.name "HolbieEnjoyer"
 git config --global user.email "8698@holbertonstudents.com"
 git add --all
