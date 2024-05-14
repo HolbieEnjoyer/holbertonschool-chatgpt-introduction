@@ -1,17 +1,21 @@
 #!/usr/bin/python3
 import sys
 
-# Define a function to calculate the factorial of a given number 'n'
 def factorial(n):
-    # Base case: If n is 0, factorial is 1
+    """
+    Calculates the factorial of a given integer using recursion.
+
+    Parameters:
+        n (int): The integer for which factorial is to be calculated.
+
+    Returns:
+        int: The factorial of the input integer.
+    """
     if n == 0:
         return 1
     else:
-        # Recursive case: Multiply n with the factorial of (n-1)
         return n * factorial(n-1)
 
-# Get the input from the command line argument and calculate its factorial
+# Extracting the command line argument and calculating factorial
 f = factorial(int(sys.argv[1]))
-
-# Print the factorial
 print(f)
